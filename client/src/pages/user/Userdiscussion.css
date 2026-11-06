@@ -1,0 +1,30 @@
+.discussion-page{
+    min-height:100vh;
+    background:#eef3fb;
+    padding-bottom:40px;
+}
+
+.forum-card{
+    border:none;
+    border-radius:20px;
+    box-shadow:0 0 20px rgba(72,90,255,.35);
+}
+
+
+.forum-card textarea{
+    resize:none;
+    font-size:18px;
+}
+
+table{
+    background:white;
+}
+
+th{
+    background:#f8f9fa;
+    font-size:20px;
+}
+
+td{
+    vertical-align:middle;
+}

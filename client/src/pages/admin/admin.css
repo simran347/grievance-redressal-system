@@ -1,0 +1,275 @@
+@import "./admindashboard.css";
+.card{
+    height:250px;
+    width:826px;
+    margin-top:50px;
+    margin-left:50px;
+    border:none;
+}
+
+.btn {
+    width:200px;
+    height:50px;
+}
+
+.dashboard-card {
+    box-shadow: 0 8px 20px rgba(0, 45, 128, 0.28);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 12px 30px rgba(0, 45, 128, 0.4);
+}
+
+.col{
+    display: inline-block;
+    height:50px;
+    width:300px;
+    /* border:1px solid black; */
+}
+.form-select{
+    height:30px;
+    width:40px;
+}
+
+/* {import} */
+
+
+
+.menu-link{
+    text-decoration:none;
+    color:inherit;
+}
+
+.menu-link:hover{
+    color:inherit;
+}
+
+.college-page{
+    min-height:calc(100vh - 70px);
+    padding:34px 36px;
+    background:#eef3f9;
+}
+
+.college-form-card{
+    width:100%;
+    max-width:980px;
+    margin:0 auto 28px;
+    padding:26px 32px 30px;
+    background:#fff;
+    border:1px solid #dde4ed;
+    border-radius:10px;
+    box-shadow:0 8px 22px rgba(17, 24, 39, .05);
+}
+
+.college-form-card h2{
+    color:#1266ff;
+    text-align:center;
+    font-size:28px;
+    font-weight:800;
+    margin-bottom:24px;
+}
+
+.college-field{
+    margin-bottom:18px;
+}
+
+.college-field label{
+    display:block;
+    color:#5d6d7e;
+    font-size:18px;
+    font-weight:700;
+    margin-bottom:9px;
+}
+
+.college-field input,
+.college-field textarea{
+    width:100%;
+    border:0;
+    outline:0;
+    border-radius:8px;
+    background:#f7f8fa;
+    color:#1f2937;
+    font-size:18px;
+    padding:12px 16px;
+}
+
+.college-field textarea{
+    resize:vertical;
+    min-height:96px;
+    font-size:18px;
+}
+
+.college-field input::placeholder,
+.college-field textarea::placeholder{
+    color:#4f5967;
+}
+
+.save-college-btn{
+    display:block;
+    width:min(240px, 100%);
+    margin:24px auto 0;
+    border:0;
+    border-radius:28px;
+    background:#1873f9;
+    color:white;
+    padding:12px 22px;
+    font-size:20px;
+    font-weight:800;
+    box-shadow:0 8px 16px rgba(24, 115, 249, .25);
+}
+
+.save-college-btn:hover{
+    background:#0f66e8;
+}
+
+.registered-colleges{
+    background:#fff;
+    border:1px solid #dde4ed;
+    border-radius:10px;
+    padding:26px 30px;
+    box-shadow:0 8px 22px rgba(17, 24, 39, .05);
+}
+
+.registered-colleges h3{
+    color:#5d6d7e;
+    font-size:24px;
+    font-weight:800;
+    margin-bottom:24px;
+}
+
+.table-controls{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+    margin-bottom:20px;
+}
+
+.entries-control{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    color:#111827;
+    font-size:16px;
+}
+
+.entries-control select,
+.table-controls input{
+    height:38px;
+    border:1px solid #d6dde7;
+    border-radius:6px;
+    background:#fff;
+    color:#374151;
+    font-size:16px;
+    padding:0 12px;
+}
+
+.table-controls input{
+    width:280px;
+}
+
+.college-table{
+    width:100%;
+    border-collapse:collapse;
+    min-width:780px;
+}
+
+.college-table thead{
+    border-bottom:2px solid #d9dee6;
+}
+
+.college-table th{
+    color:#364152;
+    font-size:14px;
+    letter-spacing:.8px;
+    padding:13px 12px 15px;
+}
+
+.college-table td{
+    color:#1f2937;
+    font-size:16px;
+    padding:14px 12px;
+    vertical-align:middle;
+}
+
+.college-table th:first-child,
+.college-table td:first-child{
+    text-align:center;
+    width:90px;
+}
+
+.college-table td:last-child{
+    display:flex;
+    gap:10px;
+    justify-content:flex-end;
+}
+
+.edit-btn,
+.delete-btn{
+    border:1px solid;
+    border-radius:8px;
+    background:white;
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    font-size:15px;
+    padding:7px 14px;
+}
+
+.edit-btn{
+    border-color:#0d6efd;
+    color:#0d6efd;
+}
+
+.delete-btn{
+    border-color:#dc3545;
+    color:#dc3545;
+}
+
+@media(max-width:768px){
+    .college-page{
+        padding:20px 14px;
+    }
+
+    .college-form-card,
+    .registered-colleges{
+        padding:22px 16px;
+    }
+
+    .college-form-card h2{
+        font-size:24px;
+    }
+
+    .college-field label{
+        font-size:16px;
+    }
+
+    .college-field input,
+    .college-field textarea{
+        font-size:16px;
+    }
+
+    .table-controls{
+        align-items:flex-start;
+        flex-direction:column;
+    }
+
+    .table-controls input{
+        width:100%;
+    }
+}
+
+textarea{
+    height:50px;
+    width:790px;
+}
+
+
+/* dash board .css */
+
+.button{
+    height:50px;
+    width:50px;
+}

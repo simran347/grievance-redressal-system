@@ -1,0 +1,269 @@
+.user-dashboard {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    background: #f4f6fb;
+}
+
+/* Sidebar */
+.user-sidebar {
+    width: 270px;
+    background: #1b3542; /* Slate Teal */
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.user-sidebar > div:first-child {
+    flex: 1;
+    overflow-y: auto;
+}
+
+.user-logo-section {
+    display: flex;
+    align-items: center;
+    padding: 22px;
+    border-bottom: 1px solid rgba(255, 255, 255, .08);
+}
+
+.user-logo-box {
+    width: 45px;
+    height: 45px;
+    background: #4a90e2; /* Blue Student Cap Box */
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    font-size: 20px;
+    color: white;
+}
+
+.user-logo-section h5 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.user-logo-section span {
+    color: #8da2ae;
+    font-size: 13px;
+}
+
+.user-menu-title {
+    padding: 18px 22px 8px;
+    color: #6c8a9a;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.user-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.user-menu-link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.user-menu li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 14px 22px;
+    cursor: pointer;
+    color: #cbdce6;
+    transition: .3s;
+    font-size: 15px;
+}
+
+.user-menu li:hover {
+    background: #254252;
+    color: #fff;
+}
+
+.user-menu li.active {
+    background: #2c4e5e;
+    color: #fff;
+    border-left: 4px solid #00dac6;
+}
+
+.user-logout {
+    padding: 18px 22px;
+    border-top: 1px solid rgba(255, 255, 255, .08);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: #1b3542;
+    color: #ff8080;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.user-logout:hover {
+    background: #254252;
+}
+
+/* Content Area */
+.user-content {
+    margin-left: 270px;
+    width: calc(100% - 270px);
+}
+
+.user-topbar {
+    height: 70px;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .05);
+}
+
+.user-topbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.user-menu-btn {
+    width: 42px;
+    height: 42px;
+    border: none;
+    border-radius: 10px;
+    background: #f2f4fa;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-greeting {
+    margin-left: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+}
+
+.user-topbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.user-time {
+    font-size: 16px;
+    font-weight: 700;
+    color: #333;
+    margin-right: 20px;
+}
+
+.user-profile {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #e1f5fe;
+    color: #0288d1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+}
+
+/* User Dashboard Content */
+.user-container {
+    padding: 35px;
+}
+
+/* Custom Portal Cards with Blue Shadow */
+.portal-card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 45, 128, 0.28);
+    transition: .3s;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 280px;
+}
+
+.portal-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 40px rgba(0, 45, 128, 0.4);
+}
+
+/* Badge block inside card */
+.card-badge {
+    background: #007bff;
+    color: white;
+    padding: 6px 14px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.card-badge-count {
+    background: white;
+    color: #111;
+    padding: 1px 8px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.portal-card h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.portal-card-icon {
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.portal-card-btn {
+    background: #00dac6;
+    color: #111;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 24px;
+    font-weight: 700;
+    transition: .3s;
+    width: 100px;
+}
+
+.portal-card-btn:hover {
+    background: #00bfa5;
+    color: #000;
+}
+
+/* Responsive grid */
+@media (max-width: 768px) {
+    .user-sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+    .user-content {
+        width: 100%;
+        margin-left: 0;
+    }
+    .user-dashboard {
+        flex-direction: column;
+    }
+}
